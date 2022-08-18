@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="525.0" prefWidth="443.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.server.ServerFormController">
+   <children>
+      <TextField fx:id="txtMsgInput" layoutX="9.0" layoutY="441.0" prefHeight="45.0" prefWidth="355.0" style="-fx-background-radius: 20;">
+         <padding>
+            <Insets left="10.0" right="45.0" />
+         </padding>
+      </TextField>
+      <JFXButton layoutX="366.0" layoutY="445.0" onAction="#btnSend" prefHeight="37.0" prefWidth="68.0" style="-fx-background-color: #9b59b6; -fx-background-radius: 20;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="306.0" layoutY="436.0" prefHeight="45.0" prefWidth="45.0" ripplerFill="#0984e3" style="-fx-background-radius: 0 20 20 0;" text="📷">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <TextArea fx:id="txtMsgDisplay" layoutX="9.0" layoutY="124.0" prefHeight="283.0" prefWidth="425.0" />
+      <AnchorPane prefHeight="50.0" prefWidth="443.0" style="-fx-background-color: #9b59b6;" styleClass="header" stylesheets="@../styles/style.css">
+         <children>
+            <Label prefHeight="50.0" prefWidth="143.0" text="Chat Room - Server" textFill="WHITE" wrapText="true">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="396.0" layoutY="2.0" onAction="#btnClose" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50px;" text="❌" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="350.0" layoutY="2.0" onAction="#btnMinimize" prefHeight="45.0" prefWidth="45.0" style="-fx-background-radius: 50px;" text="🔻" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="60.0" prefHeight="44.0" prefWidth="443.0" text="Server side" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
